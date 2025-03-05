@@ -1,5 +1,5 @@
-import { cacheTime } from "../../be/config/index.js";
-let timeLeft =  cacheTime.time; 
+// import { cacheTime } from "../../be/config/index.js";
+let timeLeft = 70; 
 
 
 let cache = {
@@ -8,9 +8,9 @@ let cache = {
   timeLeft: timeLeft,
   interval: null,
 };
-export {
-  cache
-}
+// export {
+//   cache
+// }
 const startCountdown = (socket) => {
     // Send the initial countdown time when a new connection is made
     socket.emit('countdown', cache.timeLeft);
