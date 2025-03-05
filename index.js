@@ -23,7 +23,7 @@ io.on("connection", (socket) => {
     jobResetNotification()
 });
 
-httpServer.listen(5001, () => {
+httpServer.listen(5001, '0.0.0.0',() => {
     console.log(`Socket.IO server running on port: 5001`);
 });
 
