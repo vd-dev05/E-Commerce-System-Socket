@@ -48,7 +48,7 @@ const jobResetNotification =() => {
             }
           });
     } else {
-        console.log( "Khong co thong bao duoc reset");
+        // console.log( "Khong co thong bao duoc reset");
         
     }
    
