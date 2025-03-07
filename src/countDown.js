@@ -60,6 +60,8 @@ const startCountdown = (socket) => {
           'Authorization': `Bearer ${process.env.PASSWORD_CREATE_SALE}`
         },
       })
+      console.log(response);
+      console.log('Token:', process.env.PASSWORD_CREATE_SALE);
       const data = await response.json()
      
       dataSale  = data.products
